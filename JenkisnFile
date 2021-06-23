@@ -4,7 +4,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'helloworld'
-        bat 'mvn test'
+        bat 'cypress run'
       }
     }
   }
