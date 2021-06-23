@@ -1,0 +1,14 @@
+pipeline {
+    agent none
+    stages {
+
+        stage('Test') {
+            agent{
+                label 'TestEcho'
+            }
+            steps {
+                echo 'helloworld'
+            }
+        }
+    }
+}
